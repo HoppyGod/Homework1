@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 120px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #202027;
+}
+
+.hero {
+    background-color: #E1FF8F;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.hero__content {
+    position: relative;
+    padding-top: 196px;
+}
+
+.hero__title {
+    max-width: 769px;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.hero__description {
+    margin-top: 24px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 720px;
+    font-size: 24px;
+    line-height: 1.33;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.hero__button {
+    margin-top: 48px;
+    line-height: 1.42;
+    font-size: 24px;
+    padding: 16px 65px;
+    color: #fff;
+    background: #202027;
+    border-radius: 60px;
+    border: 1px solid #202027;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero__button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.hero-opacity--small {
+    position: absolute;
+    top: 69px;
+    left: 156px;
+}
+
+.hero-green--big {
+    position: absolute;
+    top: 94px;
+    left: 63px;
+}
+
+.hero-green--small {
+    position: absolute;
+    bottom: 0;
+    right: 335px;
+}
+
+.hero-opacity--big {
+    position: absolute;
+    bottom: -80px;
+    right: 244px;
+}
+
+
+.hero__slider {
+    margin-top: 156px;
+    overflow: hidden;
+    max-width: 3218px;
+    backdrop-filter: blur(50px);
+    background: #bcec30;
+}
+
+.slider__content {
+    display: flex;
+    padding: 27px 0;
+    gap: 138px;
+}
+
+.slider__item {
+    flex-shrink: 0;
+    position: relative;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.slider__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    background: url("images/hero-black.png");
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    margin-left: 51px;
+}
